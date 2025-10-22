@@ -67,3 +67,24 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch
 
+## 🔧 Mejoras Implementadas en el Sistema LIDAR+SLAM
+
+### Optimizaciones Realizadas
+
+1. Configuración de Parámetros gmapping
+
+- Ajuste de maxUrange para mejor detección de obstáculos
+- Optimización de particles para mayor precisión en localización
+- Configuración de delta para resolución de mapa adecuada
+
+2. Integración con Docker
+
+- Montaje de volumen para persistencia de mapas generados
+- Configuración de red Docker para comunicación entre nodos ROS
+- Optimización de layers para reducir tamaño de imagen
+
+3. Mejoras de Rendimiento
+
+- Uso de roscore centralizado dentro del contenedor
+- Configuración de QoS en topics ROS
+- Optimización de recursos de GPU para procesamiento LIDAR
