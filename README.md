@@ -120,3 +120,44 @@ docker run -it --rm \
     --env="DISPLAY" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     tu_usuario/turtlebot3_slam:latest
+
+
+------------
+
+## 🎯 Trayectorias Desarrolladas para el Robot LIDAR+SLAM
+
+### Estrategias de Navegacion
+
+1. Mapeo Completo de Entorno
+
+- Exploración sistemática con cobertura total
+
+- Evitación reactiva de obstáculos
+
+- Optimización de ruta para eficiencia energética
+
+2. Navegacion por Waypoints
+
+- Definición de puntos de interés
+
+- Planificación de trayectorias óptimas
+
+- Corrección en tiempo real con SLAM
+
+3. Segumiento de Objetivos Dinamicos
+
+- Actualización continua del mapa
+
+- Replanificación adaptativa
+
+- Integración con sistemas IoT externos
+
+### 👥 Autores
+
+- Cristian David Losada
+
+- Yojan Arley Contreras
+
+### Institucion
+
+Universidad Santo Tomás - Digitales 3
