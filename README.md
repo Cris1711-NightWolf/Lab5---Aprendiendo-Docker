@@ -88,3 +88,35 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch
 - Uso de roscore centralizado dentro del contenedor
 - Configuración de QoS en topics ROS
 - Optimización de recursos de GPU para procesamiento LIDAR
+
+## 📦Subida a Docker Hub
+
+### Proceso de publicacion
+
+1. Preparacion de la imagen
+
+docker images
+
+docker tag turtlebot3_slam tu_usuario/turtlebot3_slam:latest
+
+docker images
+
+2. Login a Docker Hub
+
+docker login
+
+Username: tu_usuario
+Password: ********
+
+3. Subir la imagen
+
+docker push tu_usuario/turtlebot3_slam:latest
+
+docker search tu_usuario/turtlebot3_slam
+
+### Uso de la imagen publicada
+
+docker run -it --rm \
+    --env="DISPLAY" \
+    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+    tu_usuario/turtlebot3_slam:latest
